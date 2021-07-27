@@ -1,0 +1,123 @@
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-family: "Montserrat";
+    font-size: 1.2vw;
+    color: #e2e2e2;
+}
+
+
+
+a{
+    text-decoration:none;
+    color: #808080;
+    font-family: "Poppins";
+    font-weight: normal;
+    letter-spacing: .15vw;
+}
+
+a:hover{
+    color: #e2e2e2;
+    font-weight: lighter;
+}
+
+.heading{
+    font-size: 4vw;
+    line-height: 5vw;
+}
+
+.subject{
+    color: #808080;
+}
+
+.para{
+    letter-spacing: .1vw;
+}
+
+#myword .heading{
+    font-size: 6vw;
+    line-height: 10vw;
+}
+
+.wordpara{
+    font-size: 1.5vw;
+}
+
+.what-special{
+    font-size: 2.5vw;
+}
+
+.what-special h4{
+    color: #808080;
+}
+
+.cbox{
+    font-size: 1.2vw;
+}
+
+.cbox i{
+    font-size: 3.5vw;
+}
+
+#clk{
+    font-size: 3vw;
+}
+
+#clk span:after{
+    font-size: 1vw;
+}
+
+#work .heading{
+    font-size: 6vw;
+}
+
+.social-links li{
+    font-size: 1.8vw;
+}
+
+.social-links li:hover{
+    font-size: 2vw;
+}
+
+@media only screen and (max-width: 430px){
+    body{
+        font-size: 3.5vw;
+    }
+
+    .heading{
+        font-size: 6vw;
+        line-height: 8vw;
+    }
+
+    .wordpara{
+        font-size: 4vw;
+        line-height: 5vw;
+        color: #808080;
+    }
+
+    .cbox{
+        font-size: 3.5vw;
+    }
+
+    .cbox i{
+        font-size: 8vw;
+    }
+    #clk{
+        font-size: 5vw;
+    }
+    #clk span:after{
+        font-size: 2vw;
+    }
+    #work .heading{
+        font-size: 12vw;
+    }
+    .social-links li{
+        font-size: 5vw;
+    }
+    .social-links li:hover{
+        font-size: 5.2vw;
+    }
+}

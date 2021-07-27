@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice info</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="typography.css">
+</head>
+<body>
+    <section id="open">
+        <!-- <img src="voice1.gif" alt="" class="anim"> -->
+        <div class="heading1">
+            <!-- <h1>WELCOME TO THE INFORMATION PAGE</h1>
+            <h1>of</h1> -->
+            <h1 CLASS="voice" >VOICE</h1>
+            <h1 class="assistant">ASSISTANT</h1>
+        </div>
+        <div class="micbtn" >
+            <button id="clk" class="talk"><span><i class="fas fa-microphone-alt"></i></span></button>
+            <h3 class="content" style = "opacity: 0; position: absolute;"></h3>
+        </div>
+        <div class="para">
+            <h3>I created this website to showcase my skills in the field of web development.</h3>
+            <p>The voice assistant is a very important part of this website. It knows everything about this website. This voice assistant is written in Vanilla JavaScript</p>
+        </div>
+        <img class="anim1" src="voice2.gif" alt="voice2 gif">
+        <div class="ar-dw">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23.256" height="56.559" viewBox="0 0 23.256 56.559">
+                <path id="Icon_ionic-ios-arrow-round-down" data-name="Icon ionic-ios-arrow-round-down" d="M34.058,43.944a1.206,1.206,0,0,0-2.228-.02L24.453,55.849V10.409c0-1.395-.7-2.534-1.574-2.534S21.3,9.014,21.3,10.409v45.44L13.929,43.9a1.211,1.211,0,0,0-2.228.02,3.751,3.751,0,0,0,.012,3.6L21.765,63.707h0a1.991,1.991,0,0,0,.5.53,1.028,1.028,0,0,0,.606.2,1.356,1.356,0,0,0,1.1-.727L34.021,47.519A3.68,3.68,0,0,0,34.058,43.944Z" transform="translate(-11.247 -7.875)" fill="#fff"/>
+            </svg>
+        </div>
+    </section>
+    <section>
+        <h2>INSPERATION</h2>
+        <p>I often fantasized about the future of technology, where AI, vertual assistants, IOT and many more of those thechnologies will be a unseparatable part of our socity. I grewup watching science-friction movies and realized that one of those future technologies is be able to communicate with your seroundings thhrough natural languages. S o This is my first step to a vertual assistant.</p>
+    </section>
+    <section>
+        <h2>My approach to build the assistant</h2>
+        <p>From fantacy I thought about a website that has a inbuilt Voice Assistant to do every single operation of the website. So I decided to build it in My Portfolio website.</p>
+        <p>I started to study google assistant and cortana to get a besic idea about the basic functions to build my own, I started to learn about building voice assistant from YouTube and started to build my own voice assistant</p>
+        <p>I started to build it part by part and finally intigrated all the parts together</p>
+        <!-- <img src="voicehome.JPG" alt="voicehome img"> -->
+    </section>
+    <section>
+        <h2>PRE-DEFINED functions</h2>
+        <p>As I have seen in the case of <a href="https://assistant.google.com/">Google Assistant</a> and <a href="https://www.microsoft.com/en-us/cortana">Cortana</a> that there are some basic feedbacks that are predefined and the assistant repeats them randomly from provided arry of strings. So I predefined some of the answers for specific questions.</p>
+        <!-- <img src="code1.JPG" alt="code 1"> -->
+    </section>
+    <section>
+        <h2>Using keywords instead of predefined statements</h2>
+        <p>I made it a keywords based approach to increase the freedom to command as in this case "wh" words with some predefined words will lead to a specific reasult with lesser failure chance.</p>
+    </section>
+    <section>
+        <h2>Making of the Navigation through voice</h2>
+        <p>The voice assistant would be incomplete with out the power to execute the user commands. One of the most useful features is able to navigate through voice only.</p>
+        <p>It was complicated to find out the desired destination of the visitor, after some trial and errors I decided to go with the easiest possibility that I could think of. So, once again I used the keywords to split the string just after the word "To" and That is how the assistant knows visitors desired destination.</p->
+        <p>To go to the destination I used the HTML ID attribute to find the location and used click functions</p>
+        <!-- <img src="codetest1.JPG" alt="codetest1 img">
+        <img src="code2.JPG" alt="code2 img"> -->
+    </section>
+    <section>
+        <h2>Weather reaport</h2>
+        <!-- <img src="codetest2.JPG" alt="codetest2 img">
+        <img src="code3.JPG" alt="code3 img"> -->
+        <p>To get the real time weather reaport of any city I had to use "OpenWeathermap" API to get the weather reaport. I used the same strategy of keywords to get the city from the string.</p>
+    </section>
+</body>
+</html>

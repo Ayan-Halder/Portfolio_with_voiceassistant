@@ -1,0 +1,731 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    font-size:62.5%;
+}
+body{
+    background-color: #222;
+}
+
+
+.anime{
+    position: absolute;
+    background: black;
+    height: 100vh;
+    z-index: -1;
+    width: 100%;
+}
+
+.wlc{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+
+.wlc path:nth-child(1){
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 50px;
+}
+.wlc path:nth-child(2){
+    stroke-dasharray: 800px;
+    stroke-dashoffset: 800px;
+    animation: line-anim 1s ease forwards 0.3s;
+}
+.wlc path:nth-child(3){
+    stroke-dasharray: 540px;
+    stroke-dashoffset: 540px;
+    animation: line-anim 1s ease forwards 0.7s;
+}
+.wlc path:nth-child(4){
+    stroke-dasharray: 355px;
+    stroke-dashoffset: 355px;
+    animation: line-anim 1s ease forwards 1s;
+}
+.wlc path:nth-child(5){
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: line-anim 1s ease forwards 1.3s;
+}
+.wlc path:nth-child(6){
+    stroke-dasharray: 335px;
+    stroke-dashoffset: 335px;
+    animation: line-anim 1s ease forwards 1.6s;
+}
+.wlc path:nth-child(7){
+    stroke-dasharray: 810px;
+    stroke-dashoffset: 810px;
+    animation: line-anim 1s ease forwards 1.9s;
+}
+.wlc path:nth-child(8){
+    stroke-dasharray: 540px;
+    stroke-dashoffset: 540px;
+    animation: line-anim 1s ease forwards 2.2s;
+}
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+.backline{
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    stroke-dasharray: 740px;
+    stroke-dashoffset: 740px;
+    animation: line-anim 1.6s ease forwards 0.6s;
+}
+
+
+.backtext{
+    position: absolute;
+    top: 52%;
+    left: 55%;
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@media only screen and (max-width:430px){
+
+    .wlc{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .backline{
+        position: absolute;
+        top: 53%;
+        left: 18%;
+        stroke-dasharray: 740px;
+        stroke-dashoffset: 740px;
+        animation: line-anim 1.6s ease forwards 0.6s;
+    }
+    
+    
+    .backtext{
+        position: absolute;
+        top: 54%;
+        left: 55%;
+        animation-name: appear;
+        animation-duration: 1.5s;
+        animation-delay: 1.5s;
+        animation-fill-mode: backwards;
+    
+    }
+}
+
+
+.circlefloat{
+    height: 70vw;
+    width: 70vw;
+    border-radius: 50%;
+    background-image: linear-gradient(to top right, rgba(75, 75, 75, 0.418), #000000);
+    position: absolute;
+    z-index: 1;
+    animation-name: appear;
+    animation-duration: 2.5s;
+    animation-delay: 5.5s;
+    animation-fill-mode: backwards;
+}
+
+.m1{
+    left: -40%;
+    top: -40%;
+    
+}
+
+.m2{
+    height: 20vw;
+    width: 20vw;
+    top: 50%;
+    left: 45%;
+}
+.m3{
+    height: 40vw;
+    width: 40vw;
+    border-radius: 0 0 0 100%;
+    top: 0%;
+    right: 0%;
+}
+
+@media only screen and (max-width:430px){
+    .m1{
+        left: 0;
+        top: 0;
+    }
+    .m3{
+        height: 70vw;
+        width: 70vw;
+        border-radius: 50%;
+        top: 70%;
+        left: 15%;
+    }
+}
+
+
+/* opening page */
+#opening{
+    background-color: #222;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+    perspective: 1000;
+}
+
+.card{
+    position: absolute;
+    width: 80%;
+    left: 6%;
+    top: 10%;
+    transform-style: preserve-3d;
+    animation: scale;
+    animation-duration: 2s;
+    animation-delay: 4.5s;
+    animation-fill-mode: backwards;
+    z-index: 2;
+}
+@keyframes scale {
+    0%{
+        transform: scale(0,0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1,1);
+        opacity: 1;
+    }
+}
+
+.sign{
+    position: absolute;
+    left: 8%;
+    top: 45%;
+}
+
+.black-box{
+    height: 100%;
+    width: 70%;
+    position: relative;
+    left: 30%;
+    background-color: #151515;
+    padding: 10vh 0;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-delay: 3.5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInLeft {
+    0%{
+        transform: translate(100%);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+.menu{
+    width: 10%;
+    position: relative;
+    margin: 2vh 0;
+    left: 50%;
+    animation:moveInBottom;
+    animation-duration: 1.8s;
+    animation-delay: 4s;
+    animation-fill-mode: backwards;
+    z-index: 4;
+}
+
+.content{
+    padding: 2rem;
+    width: 50%;
+    position: relative;
+    left: 42%; 
+    margin: 4vh;
+    animation:moveInBottom;
+    animation-duration: 1.2s;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+    z-index: 2;
+}
+
+.heading{
+    margin: 2.5vh 0;
+    line-height: 5vh;
+    animation:moveInBottom;
+    animation-duration: 2s;
+    animation-delay: 4.5s;
+    animation-fill-mode: backwards;
+    z-index: 2;
+}
+
+.subject{
+    margin: 2vh 0;
+    animation:moveInBottom;
+    animation-duration: 1.5s;
+    animation-delay: 4.8s;
+    animation-fill-mode: backwards;
+    z-index: 2;
+}
+
+.email{
+    margin: 5vh 0;
+    position: relative;
+    width: 80%;
+    left: 45%;
+    padding: 2.5rem;
+    animation:moveInBottom;
+    animation-duration: 1.5s;
+    animation-delay: 5s;
+    animation-fill-mode: backwards;
+    z-index: 4;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+@media only screen and (max-width:430px){
+    .card{
+        top: 15%;
+        width: 90%;
+    }
+    .content{
+        left: 12%;
+        width: 60%;
+        padding: .5rem;
+        text-align: center;
+        margin: 8vh auto;
+    }
+    .email{
+        left: 10%;
+        padding: .5rem;
+        margin: 6vh auto;
+    }
+}
+
+
+/* my work section */
+
+#myword{
+    background-color: #222;
+    padding: .5rem;
+}
+
+#myword .heading{
+    text-align: center;
+    margin: 5vh 0;
+    z-index: 2;
+}
+
+.myimg{
+    width: 40%;
+    opacity: .8;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+}
+
+.wordpara{
+    margin: 25vh 0 40vh 0;
+    width: 40%;
+    padding: 2.5rem;
+    position: relative;
+    top: 20%;
+    left: 15%;
+    text-align: center;
+}
+
+.wordpara p{
+    margin: 5vh 0;
+}
+
+.wordpara h3{
+    text-align: right;
+}
+
+.wordbutton{
+    margin: 5vh auto;
+}
+
+@media only screen and (max-width:430px){
+    .myimg{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        top: 0;
+        margin: 0 auto;
+    }
+    .wordpara{
+        position: relative;
+        margin: 0;
+        width: 80%;
+        padding: 2.5rem;
+        position: relative;
+        left: 10%;
+    }
+}
+
+
+/* special section */
+
+#special{
+    background: #222;
+}
+
+.clipy{
+    clip-path: polygon(0 40%, 100% 0%, 100% 60%, 0% 100%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #111;
+    z-index: 0;
+}
+
+.what-special{
+    position: relative;
+    width: 80%;
+    z-index: 1;
+    left: 5%;
+}
+
+.what-special h4{
+    padding-left: 5rem;
+}
+
+.conbox{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    margin: 10vh 0;
+}
+
+.cbox{
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3), rgba(128, 128, 128, 0.3));
+    width: 18%;
+    height: 45vh;
+    border-radius: 5%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.cbox:hover{
+    transform: translateY(-10px);
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.3), rgba(225, 225, 225, 0.3));
+    transition: all 0.5s;
+}
+
+.cbox i{
+    padding: 2.5rem;
+}
+
+.mic{
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+}
+
+.mic h4{
+    padding-top: 2rem;
+}
+
+#clk {
+    border-radius: 50%;
+    background-color: #222;
+    border: 1px solid #fff;
+    color: #FFFFFF;
+    text-align: center;
+    width: 6vw;
+    height: 6vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px black;
+    position: relative;
+}
+
+#clk span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+#clk span:after {
+    content: 'Talk';
+    padding-top: 1vw;;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -1.5vw;
+    transition: 0.5s;
+}
+
+#clk:hover span {
+    padding-right: 2vw;
+}
+
+#clk:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#clk:active{
+    box-shadow: 2px 2px 5px black;
+    background-color: white;
+    color: black;
+}
+
+
+@media only screen and (max-width:430px){
+    .what-special{
+        text-align: center;
+        padding-left: 1.5rem;
+    }
+    .what-special h4{
+        padding-left: 1rem;
+    }
+    .conbox{
+        margin: 2vh 0;
+    }
+    .cbox{
+    margin: 6%;
+    width: 40%;
+    height: 25vh;
+    border-radius: 10%;
+    text-align: center;
+    padding: 1rem;
+    }
+    .cbox i{
+        padding: 1rem;
+    }
+    #clk{
+        width: 16vw;
+        height: 16vw;
+    }
+    #clk span:after{
+        padding-top: 1.5vw;;
+        right: -3vw;
+    }
+    #clk:hover span {
+        padding-right: 4vw;
+    }
+    .mic{
+        text-align: center;
+    }
+}
+
+
+/* my work section */
+
+#work{
+    background-color: #222;
+    padding: 1.5rem .5rem;
+}
+
+#work .heading{
+    text-align: center;
+    z-index: 1;
+    padding: 5rem;
+}
+
+.flip-card-holder{
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 600px;
+    perspective: 1000px;
+    margin: 3rem 3rem;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 25px rgba(0,0,0);
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    
+    color: rgb(255, 248, 248);
+    overflow: hidden;
+}
+.flip-card-back {
+    background-color: #333333;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 5rem 3rem;
+}
+
+.flip-card-back p{
+    margin: 5rem 0;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+
+}
+
+.card-button{
+    padding: 1.2rem 2rem;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 6rem;
+    left: 35%;
+}
+
+.card-button:hover{
+    background-color: #fff;
+    color: black;
+    box-shadow: 1px 1px 10px black;
+
+}
+
+
+/* footer section */
+
+#footer{
+    background-color: #151515;
+    padding: .5rem;
+    overflow: hidden;
+}
+
+.achknowledge{
+    width: 40%;
+    padding: 5rem;
+    margin-bottom: 3rem;
+}
+
+.achknowledge h4{
+    margin-top: 2rem;
+    letter-spacing: 0.01rem;
+    font-weight: lighter;
+    width: 60%;
+}
+
+.achknowledge h4:hover{
+    font-size: 1.8rem;
+}
+
+.social-links{
+    margin: 0 0 4rem 6rem;
+    letter-spacing: .1rem;
+    width: 10%;
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 5%;
+}
+
+
+.address{
+    color:rgba(255, 255, 255, 0.50);
+    width: 18%;
+    position: relative;
+    left: 70%;
+    padding: 2rem;
+}
+
+.address p{
+    margin-top: 4vh;
+}
+
+.address a{
+    color: rgb(255, 255, 255);
+    letter-spacing: .1rem;
+    position: relative;
+    top: 2.5rem;
+}
+
+.footsign{
+    position: relative;
+    left: 68%;
+}
+
+footer{
+    background-color:#1b1b1b;
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    color: rgba(255,255,255, 0.50);
+    padding-bottom: 2.5rem; 
+}
+
+@media only screen and (max-width:430px){
+    #footer{
+        text-align: center;
+    }
+    .achknowledge{
+        position: relative;
+        width: 100%;
+    }
+    .social-links{
+        position: relative;
+        margin: 0;
+        width: 40%;
+        left: 30%;
+    }
+    .address{
+        width: 80%;
+        left: 10%;
+    }
+    .address p{
+        margin-top: 2vh;
+    }
+    .footsign{
+        left: 0;
+        margin: 2vh 0;
+    }
+}
+
+footer{
+    padding: 1.5rem;
+}
